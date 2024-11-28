@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+    margin-bottom: 1em
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* End Reset */
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    align-content: center;
+    background-color: #010114;
+    background: rgb(0, 4, 19);
+    background: linear-gradient(0deg, rgba(1, 1, 20, 1) 0%, rgba(6, 70, 107, 1) 100%);
+    background-attachment: fixed;
+    color: #E5E8E7;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+
+article {
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+article:hover {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: #fff;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+h2 {
+
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-bottom: .5em;
+}
+
+a {
+    color: #fff;
+    font-weight: 600;
+}
+
+picture {
+    margin-bottom: 1em;
+}
+
+dd {
+    margin-bottom: 1em;
+}
+
+a:hover,
+a:hover svg {
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    color: #09B4B7;
+    fill: #09B4B7;
+}
+
+.active {
+    border-bottom: solid 1px #09B4B7;
+    color: #09B4B7;
+    fill: #09B4B7;
+}
+
+.active:hover {
+    color: #09B4B7;
+    fill: #09B4B7;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+section {
+    padding-top: 4em;
+    margin-bottom: 7em;
+}
+
+nav ul li {
+    margin-bottom: 1em;
+
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: fit-content;
+    gap: .5em;
+}
+
+nav ul li a svg {
+    align-self: center;
+}
+
+#container {
+    position: relative;
+    max-width: 1068px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-gap: 1em;
+    margin: 0 auto;
+}
+
+#personal-data {
+    position: sticky;
+    top: 4em;
+    display: grid;
+    height: 80vh;
+}
+
+#about-me {
+    padding: 5em 1em 1em 1em
+}
+
+.dates {
+    color: #B3B5B7;
+    display: block;
+    margin-bottom: .5em;
+    font-weight: 500;
+}
+
+article:hover .dates {
+    /* From https://css.glass */
+    color: #E5E8E7;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.article-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer {
+    align-self: end;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+footer ul li {
+    margin-right: 1em;
+}
+
+#main-content {
+    grid-column: 2;
+}
+
+#education {
+    margin-bottom: 5em;
+    padding: 1em;
+}
+
+#main-content ul {
+    margin-bottom: 1em;
+}
+
+#main-content ul li {
+    margin-bottom: .5em;
+}
+
+.horizontal-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.horizontal-list li {
+    margin-right: .5em;
+}
+
+.horizontal-list li::after {
+    content: " | ";
+}
+
+.horizontal-list li:last-child::after {
+    content: "";
+}
+
+.tech-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tech-list li {
+    margin-right: .5em;
+    color: #B3B5B7;
+    background-color: #010114;
+    padding: .4rem;
+    border-radius: .3rem;
+}
+
+article:hover .tech-list li {
+    /* From https://css.glass */
+    color: #E5E8E7;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    /* 1 */
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    /* 2 */
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 3 */
+}

@@ -159,6 +159,10 @@ a:hover svg {
 .uppercase {
     text-transform: uppercase;
 }
+.bold {
+    font-weight: 800;
+    color: #09B4B7;
+}
 
 section {
     padding-top: 4em;
@@ -212,7 +216,6 @@ nav ul li a svg {
 }
 
 article:hover .dates {
-    /* From https://css.glass */
     color: #E5E8E7;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
@@ -290,7 +293,6 @@ footer ul li {
 }
 
 article:hover .tech-list li {
-    /* From https://css.glass */
     color: #E5E8E7;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
@@ -301,10 +303,8 @@ article:hover .tech-list li {
 .sr-only {
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
-    /* 1 */
     -webkit-clip-path: inset(50%);
     clip-path: inset(50%);
-    /* 2 */
     height: 1px;
     margin: -1px;
     overflow: hidden;
@@ -312,5 +312,4 @@ article:hover .tech-list li {
     position: absolute;
     width: 1px;
     white-space: nowrap;
-    /* 3 */
 }

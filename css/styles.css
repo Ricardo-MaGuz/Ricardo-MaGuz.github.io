@@ -347,6 +347,14 @@ article:hover .tech-list li {
         display: block;
         margin: 0 auto;
     }
+        article:hover {
+            background: transparent;
+            box-shadow: none;
+            backdrop-filter: none;
+            color: var(--textColor);
+            transition: none;
+            cursor: none;
+        }
 
 
 }

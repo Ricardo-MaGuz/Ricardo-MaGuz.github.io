@@ -321,3 +321,27 @@ article:hover .tech-list li {
     width: 1px;
     white-space: nowrap;
 }
+@media (max-width: 1116px) {
+    #container {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 950px) {
+    #container {
+        max-width: 850px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #personal-data {
+        position: relative;
+        top: .5em;
+        height: auto;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+}

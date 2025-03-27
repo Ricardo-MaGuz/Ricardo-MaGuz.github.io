@@ -66,6 +66,9 @@ h6 {
 
 /* End Reset */
 
+html {
+    scroll-behavior: smooth;
+}
 :root {
     --chipBg: #010114;
     --inactiveText: #B3B5B7;
@@ -88,6 +91,7 @@ body {
     font-weight: 300;
     font-style: normal;
     font-size: 16px;
+    
 }
 
 article {
@@ -203,6 +207,7 @@ nav ul li a svg {
     grid-template-columns: 45% 55%;
     grid-gap: 1em;
     margin: 0 auto;
+    
 }
 
 #personal-data {
@@ -253,6 +258,7 @@ footer ul li {
 
 #main-content {
     grid-column: 2;
+
 }
 
 #education {

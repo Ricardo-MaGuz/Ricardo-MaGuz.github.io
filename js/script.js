@@ -1,4 +1,9 @@
 function navigateOnClick(elementClass, url) {
+    if (window.innerWidth < 950) {
+        console.log(`Screen width is less than 950px. Navigation disabled for class "${elementClass}".`);
+        return;
+    }
+
     const elements = document.getElementsByClassName(elementClass);
     if (elements.length > 0) {
         Array.from(elements).forEach((element) => {

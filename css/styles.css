@@ -66,15 +66,22 @@ h6 {
 
 /* End Reset */
 
+:root {
+    --chipBg: #010114;
+    --inactiveText: #B3B5B7;
+    --higlightText: #fff;
+    --textColor: #E5E8E7;
+    --accent: #09B4B7;
+    --backgroundColor: linear-gradient(0deg, rgba(1, 1, 20, 1) 0%, rgba(6, 70, 107, 1) 100%);
+}
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     align-content: center;
-    background-color: #010114;
-    background: rgb(0, 4, 19);
-    background: linear-gradient(0deg, rgba(1, 1, 20, 1) 0%, rgba(6, 70, 107, 1) 100%);
+    background-color: var(--chipBg);
+        background: var(--backgroundColor);
     background-attachment: fixed;
-    color: #E5E8E7;
+    color: var(--textColor);
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -94,7 +101,7 @@ article:hover {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    color: #fff;
+    color: var(--higlightText);
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
@@ -123,7 +130,7 @@ h4 {
 }
 
 a {
-    color: #fff;
+    color: var(--higlightText);
     font-weight: 600;
 }
 
@@ -141,19 +148,19 @@ a:hover svg {
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
-    color: #09B4B7;
-    fill: #09B4B7;
+    color: var(--accent);
+        fill: var(--accent);
 }
 
 .active {
-    border-bottom: solid 1px #09B4B7;
-    color: #09B4B7;
-    fill: #09B4B7;
+    border-bottom: solid 1px var(--accent);
+        color: var(--accent);
+        fill: var(--accent);
 }
 
 .active:hover {
-    color: #09B4B7;
-    fill: #09B4B7;
+    color: var(--accent);
+        fill: var(--accent);
 }
 
 .uppercase {
@@ -161,7 +168,7 @@ a:hover svg {
 }
 .bold {
     font-weight: 800;
-    color: #09B4B7;
+    color: var(--accent);
 }
 
 section {
@@ -209,14 +216,14 @@ nav ul li a svg {
 }
 
 .dates {
-    color: #B3B5B7;
+    color: var(--inactiveText);
     display: block;
     margin-bottom: .5em;
     font-weight: 500;
 }
 
 article:hover .dates {
-    color: #E5E8E7;
+    color: var(--textColor);
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
@@ -286,14 +293,14 @@ footer ul li {
 
 .tech-list li {
     margin-right: .5em;
-    color: #B3B5B7;
-    background-color: #010114;
+    color: var(--inactiveText);
+        background-color: var(--chipBg);
     padding: .4rem;
     border-radius: .3rem;
 }
 
 article:hover .tech-list li {
-    color: #E5E8E7;
+    color: var(--textColor);
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;

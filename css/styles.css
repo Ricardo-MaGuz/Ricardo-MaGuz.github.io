@@ -74,6 +74,7 @@ h6 {
     --accent: #09B4B7;
     --backgroundColor: linear-gradient(0deg, rgba(1, 1, 20, 1) 0%, rgba(6, 70, 107, 1) 100%);
 }
+
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
